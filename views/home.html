@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Booking Form</title>
+
+     <!-- Link to JavaScript -->
+    <script src="js/booking.js"defer></script>
+
+    <link rel="stylesheet" href="/styles/vacation_style.css">
+
+     <!-- Favicon -->
+    <link rel="icon" href="images/bookingicon.png">
+
+
+
+</head>
+<body>
+    <main>
+        <header>
+           
+            <div id="header">
+                <!-- <img src="https://bit.ly/305-vacation" alt="sunset in a beach"> -->
+                <h1>Book Your Dream Vacation</h1>
+            </div>
+            
+            <a id="contact-button" href="/contact-us" role="button">Contact Us</a>
+          
+        </header>
+        <form id="booking-form" action="submit" method="post">
+        <div class="booking-block">
+            <!-- Choose Destination -->
+            <fieldset>
+                <legend>Destination</legend>
+                <select id="destination" name="destination">
+                    <option value="none">Choose a destination</option>
+                    <option value="bali">Bali, Indonesia</option>
+                    <option value="paris">Paris, France</option>
+                    <option value="tokyo">Tokyo, Japan</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="newyork">New York City, USA</option>
+                </select>
+                <span id="err-destination" class="error"> Please select your destination</span>
+
+               
+
+            <div class="column-group">
+             <label for="date">Date:</label><br />
+			<input type="date" id="date" name="date"><br />
+            
+            
+              <label for="travelers">Number of Travelers:</label>
+            <input type="number"  id="travelers" name="travelers" 
+                          min="1" max="10" value="1"  required ><br> 
+            <span id="err-travelers" class="error">Number of travelers must be greater than 0</span>
+                             
+            </div>
+            
+  
+
+            <button type="submit" id="submit">Submit Button</button>
+
+            </fieldset>
+            </div>
+        </form>
+        <footer id="footer">
+  
+ 
+    <a href="/privacy">Privacy Policy</a> | 
+    
+  
+</footer>
+    </body>
+</html>
