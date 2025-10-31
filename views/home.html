@@ -25,14 +25,15 @@
                 <h1>Book Your Dream Vacation</h1>
             </div>
             
-            <a id="contact-button" href="/contact-us" role="button">Contact Us</a>
+            
           
         </header>
         <form id="booking-form" action="submit" method="post">
         <div class="booking-block">
             <!-- Choose Destination -->
-            <fieldset>
-                <legend>Destination</legend>
+            
+                <div class = "select">
+                <label for = "destination">Destination</label>
                 <select id="destination" name="destination">
                     <option value="none">Choose a destination</option>
                     <option value="bali">Bali, Indonesia</option>
@@ -42,34 +43,42 @@
                     <option value="newyork">New York City, USA</option>
                 </select>
                 <span id="err-destination" class="error"> Please select your destination</span>
-
+                </div>
                
 
             <div class="column-group">
-             <label for="date">Date:</label><br />
-			<input type="date" id="date" name="date"><br />
-            
-            
-              <label for="travelers">Number of Travelers:</label>
+            <div class="secondary">
+             <label for="date">Departure Date</label><br />
+             <input type="date" id="date" name="date"><br />
+             
+            </div>
+
+            <div class="secondary">
+            <label for="travelers">Number of Travelers:</label><br>
             <input type="number"  id="travelers" name="travelers" 
                           min="1" max="10" value="1"  required ><br> 
             <span id="err-travelers" class="error">Number of travelers must be greater than 0</span>
-                             
+            </div>               
             </div>
             
   
 
-            <button type="submit" id="submit">Submit Button</button>
+            <button type="submit" id="submit">Find My vacation</button>
 
-            </fieldset>
+           
             </div>
         </form>
+         </main>
+  
         <footer id="footer">
   
  
-    <a href="/privacy">Privacy Policy</a> | 
-    
+    <a href="https://github.com/Ebtisam0402/Booking_Form">GitHub</a> | 
+ 
   
 </footer>
+ 
+
     </body>
+
 </html>
